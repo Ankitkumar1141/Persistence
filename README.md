@@ -16,18 +16,18 @@ A hands-on notebook demonstrating how **LangGraph checkpointers** persist graph 
 ## Setup
 
 ```bash
-pip install langgraph langchain-openai python-dotenv
+pip install langgraph langchain-mistralai python-dotenv
 ```
 
-Create a `.env` file with your OpenAI key:
+Create a `.env` file with your MistralAI key:
 
 ```
-OPENAI_API_KEY=your_key_here
+MISTRALAI_API_KEY=your_key_here
 ```
 
 ## Usage
 
-1. Open `10_persistence.ipynb` and run the cells in order.
+1. Open `persistence.ipynb` and run the cells in order.
 2. For the **Fault Tolerance** section, run the crash cell, press the notebook's **Stop** button while Step 2 hangs, then run the next cell to resume.
 3. Checkpoint IDs in the time-travel cells are specific to the original run; replace them with IDs from your own `get_state_history()` output.
 
